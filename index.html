@@ -2,27 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <!-- Font Specimen Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
+<body id="body">
+  <div class="nav">
+    <img src="assets/images/logo.svg" alt="logo W." class="nav__logo">
+    <div class="movile-nav" id="movile_nav">
+      <button class="button-menu" id="button_menu">
+        <img src="assets/images/icon-menu.svg" alt="icon-menu" class="icon-menu" id="icon_menu">
+      </button>
+      <button class="button-close" id="button_close">
+        <img src="assets/images/icon-menu-close.svg" alt="close-menu" class="icon-close-menu" id="icon_close_menu">
+      </button>
+      <div class="container-links">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">New</a>
+        <a href="#" class="link">Popular</a>
+        <a href="#" class="link">Trending</a>
+        <a href="#" class="link">Categories</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- The Bright Future of Web 3.0?
 
   We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
   But is it really fulfilling its promise?
@@ -50,11 +58,7 @@
 
   03
   The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  How the pandemic has sparked fresh opportunities. -->
+  <script src="js/script.js"></script>
 </body>
 </html>

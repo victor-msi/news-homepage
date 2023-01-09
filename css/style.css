@@ -16,7 +16,58 @@
 
 body{
   font-size: 15px;
+  font-family: 'Inter', sans-serif;
   background-color: var(--Off-white);
+}
+
+.nav{
+  width: 85%;
+  padding: 5px 0;
+  margin: 50px auto 20px;
+}
+
+.nav__logo{
+  width: 55px;
+  height: 30px;
+}
+
+.movile-nav{
+  display: inline;
+  position: absolute;
+  right: 100px;
+}
+
+.container-links{
+  position: relative;
+  top: -30px;
+}
+
+.link{
+  margin: 2px 10px;
+  color: var(--Dark-grayish-blue);
+  text-decoration: none;
+}
+
+.button-close,
+.button-menu{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.icon-menu{
+  width: 40px;
+  height: 20px;
+}
+
+.icon-close-menu{
+  width: 30px;
+  height: 30px;
+}
+
+.icon-close-menu,
+.icon-menu{
+  visibility: hidden;
 }
 
 .container{
@@ -178,7 +229,54 @@ body{
   grid-area: new3;
 }
 
-/* breakpoint 1137px */
+@media screen and (max-width: 615px){
+  .nav{
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .nav__logo{
+    width: 45px;
+    height: 30px;
+  }
+
+  .movile-nav{   
+    top: 0px;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    padding: 30px 10px;
+    line-height: 40px;
+    visibility: hidden;
+    background-color: var(--Off-white);
+  }
+  
+  .icon-menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    visibility: visible;
+  }
+
+  .icon-close-menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    visibility: hidden;
+  }
+
+  .container-links{
+    top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .link{
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+
 @media screen and (max-width: 375px){
   .container{
     width: 90%;

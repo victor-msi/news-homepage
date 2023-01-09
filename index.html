@@ -11,7 +11,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>    
+<body id="body">
+  <div class="nav">
+    <img src="assets/images/logo.svg" alt="logo W." class="nav__logo">
+    <div class="movile-nav" id="movile_nav">
+      <button class="button-menu" id="button_menu">
+        <img src="assets/images/icon-menu.svg" alt="icon-menu" class="icon-menu" id="icon_menu">
+      </button>
+      <button class="button-close" id="button_close">
+        <img src="assets/images/icon-menu-close.svg" alt="close-menu" class="icon-close-menu" id="icon_close_menu">
+      </button>
+      <div class="container-links">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">New</a>
+        <a href="#" class="link">Popular</a>
+        <a href="#" class="link">Trending</a>
+        <a href="#" class="link">Categories</a>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <img src="assets/images/image-web-3-desktop.jpg" alt="image-web" class="background-img">    
     <h1 class="main__title">
@@ -99,5 +118,7 @@
       </p>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
